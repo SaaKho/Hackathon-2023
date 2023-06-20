@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Satisfaction Survey form Wizard by Ansonika.">
+	<meta name="author" content="Ansonika">
+	<title>DevJeco | Hack The Future</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114"
+		href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
+		href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Poppins:300,400,500,600,700&display=swap"
+		rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+	<style>
+		button {
+			--color: #560bad;
+			font-family: inherit;
+			display: inline-block;
+			width: 8em;
+			height: 2.6em;
+			line-height: 2.5em;
+			margin: 20px;
+			position: relative;
+			overflow: hidden;
+			border: 2px solid var(--color);
+			transition: color .5s;
+			z-index: 1;
+			font-size: 17px;
+			border-radius: 6px;
+			font-weight: 500;
+			color: var(--color);
+		}
+
+		button:before {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			background: var(--color);
+			height: 150px;
+			width: 200px;
+			border-radius: 50%;
+		}
+
+		button:hover {
+			color: #fff;
+		}
+
+		button:before {
+			top: 100%;
+			left: 100%;
+			transition: all .7s;
+		}
+
+		button:hover:before {
+			top: -30px;
+			left: -30px;
+		}
+
+		button:active:before {
+			background: #3a0ca3;
+			transition: background 0s;
+		}
+	</style>
+</head>
+
+<body class="style_2">
+
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-12">
+					<div id="social">
+						<ul>
+							<li><a href="https://www.instagram.com/lifeatdevjeco/?hl=en" target="_blank"><i
+										class="social_instagram"></i></a></li>
+							<li><a href="https://pk.linkedin.com/company/devjeco" target="_blank"><i
+										class="social_linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</header>
+	<!-- /header -->
+
+	<div class="wrapper_centering">
+		<div class="container_centering">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-xl-6 col-lg-6 d-flex align-items-center" style="padding-bottom: 200px;">
+						<div class="main_title_1">
+							<h4 style="font-size: 65px; color: white; padding-top: 0px; "><img src="img/logo1.png"
+									width="90" height="90" alt=""> Hack The Future</h4>
+							<p style="text-align: center;">Unleash Innovation at DevJeco</p>
+							<p style="text-align: center;"><em>- The DevJeco Team</em></p>
+							<input id="inp" type="text" class="form-control " style="width:50%;"
+								placeholder="Input Access Code"></input>
+							<button id="hideseekbutton">Submit</button>
+						</div>
+					</div>
+					<!-- /col -->
+					<div class="col-xl-5 col-lg-5" id="hideseek">
+						<div id="wizard_container">
+							<div id="top-wizard">
+								<div id="progressbar"></div>
+							</div>
+							<!-- /top-wizard -->
+							<form id="wrapped" method="POST" autocomplete="off">
+								<input id="website" name="website" type="text" value="">
+								<!-- Leave for security protection, read docs for details -->
+								<div id="middle-wizard">
+
+									<!-- /step 1-->
+
+
+									<!-- /step 2-->
+
+
+									<!-- /step 3-->
+
+
+									<!-- /step 4-->
+									<div class=" step">
+										<h3 class="main_question"><strong>1 of 5</strong>Kindly fill in the institution
+											details</h3>
+										<div class="form-group">
+											<label for="institution_name">Institution Name</label>
+											<input type="text" name="institution_name" id="institution_name"
+												class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="branch">Branch</label>
+											<input type="text" name="branch" id="branch" class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="city">City</label>
+											<input type="text" name="city" id="city" class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="address">Address</label>
+											<input type="text" name="address" id="address" class="form-control">
+										</div>
+										<div class="form-group">
+										</div>
+									</div>
+
+									<div class="step ">
+										<h3 class="main_question"><strong>2 of 5</strong>Fill the Team Lead's details
+										</h3>
+										<div class="form-group">
+											<label for="firstname">First Name</label>
+											<input type="text" name="firstname" id="firstname"
+												class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="lastname">Last Name</label>
+											<input type="text" name="lastname" id="lastname"
+												class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="email">Your Email</label>
+											<input type="email" name="email" id="email" class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="cnic">CNIC</label>
+											<input type="text" name="cnic" id="cnic" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="telephone">Phone Number</label>
+											<input type="number" name="telephone" id="telephone" class="form-control">
+										</div>
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-3">
+												<div class="form-group">
+													<label for="age">Age</label>
+													<input type="text" name="age" id="age" class="form-control">
+												</div>
+											</div>
+											<div class="col-9">
+												<div class="form-group radio_input">
+													<label class="container_radio">Male
+														<input type="radio" name="gender" value="Male" class="required">
+														<span class="checkmark"></span>
+													</label>
+													<label class="container_radio">Female
+														<input type="radio" name="gender" value="Female"
+															class="required">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+										</div>
+									</div>
+									<div class="step ">
+										<h3 class="main_question"><strong>3 of 5</strong>
+											Team Member 1</h3>
+										<div class="form-group">
+											<label for="tm1_firstname">First Name</label>
+											<input type="text" name="tm1_firstname" id="tm1_firstname"
+												class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="tm1_lastname">Last Name</label>
+											<input type="text" name="tm1_lastname" id="tm1_lastname"
+												class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="tm1_email">Your Email</label>
+											<input type="email" name="tm1_email" id="tm1_email"
+												class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="tm1_cnic">CNIC</label>
+											<input type="text" name="tm1_cnic" id="tm1_cnic" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="tm1_telephone">Phone Number</label>
+											<input type="number" name="tm1_telephone" id="tm1_telephone"
+												class="form-control">
+										</div>
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-3">
+												<div class="form-group">
+													<label for="tm1_age">Age</label>
+													<input type="text" name="tm1_age" id="tm1_age" class="form-control">
+												</div>
+											</div>
+											<div class="col-9">
+												<div class="form-group radio_input">
+													<label class="container_radio">Male
+														<input type="radio" name="tm1_gender" value="Male"
+															class="required">
+														<span class="checkmark"></span>
+													</label>
+													<label class="container_radio">Female
+														<input type="radio" name="tm1_gender" value="Female"
+															class="required">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="tm1_image">Image</label>
+											<input type="file" name="tm1_image" id="tm1_image"
+												class="form-control required">
+										</div>
+									</div>
+									<div class="step">
+										<h3 class="main_question"><strong>4 of 5</strong>
+											Team Member 2</h3>
+										<div class="form-group">
+											<label for="tm2_firstname">First Name</label>
+											<input type="text" name="tm2_firstname" id="tm2_firstname"
+												class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="tm2_lastname">Last Name</label>
+											<input type="text" name="tm2_lastname" id="tm2_lastname"
+												class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="tm2_email">Your Email</label>
+											<input type="email" name="tm2_email" id="tm2_email"
+												class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="tm2_cnic">CNIC</label>
+											<input type="text" name="tm2_cnic" id="tm2_cnic" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="tm2_telephone">Phone Number</label>
+											<input type="number" name="tm2_telephone" id="tm2_telephone"
+												class="form-control">
+										</div>
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-3">
+												<div class="form-group">
+													<label for="tm2_age">Age</label>
+													<input type="text" name="tm2_age" id="tm2_age" class="form-control">
+												</div>
+											</div>
+											<div class="col-9">
+												<div class="form-group radio_input">
+													<label class="container_radio">Male
+														<input type="radio" name="tm2_gender" value="Male"
+															class="required">
+														<span class="checkmark"></span>
+													</label>
+													<label class="container_radio">Female
+														<input type="radio" name="tm2_gender" value="Female"
+															class="required">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="tm2_image">Image</label>
+											<input type="file" name="tm2_image" id="tm1_image"
+												class="form-control required">
+										</div>
+									</div>
+									<div class="submit step">
+										<h3 class="main_question"><strong>5 of 5</strong>
+											Team Member 3</h3>
+										<div class="form-group">
+											<label for="tm3_firstname">First Name</label>
+											<input type="text" name="tm3_firstname" id="tm3_firstname"
+												class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="tm3_lastname">Last Name</label>
+											<input type="text" name="tm3_lastname" id="tm3_lastname"
+												class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="tm3_email">Your Email</label>
+											<input type="email" name="tm3_email" id="tm3_email"
+												class="form-control required">
+										</div>
+										<div class="form-group">
+											<label for="tm3_cnic">CNIC</label>
+											<input type="text" name="tm3_cnic" id="tm3_cnic" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="tm3_telephone">Phone Number</label>
+											<input type="number" name="tm3_telephone" id="tm3_telephone"
+												class="form-control">
+										</div>
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-3">
+												<div class="form-group">
+													<label for="tm3_age">Age</label>
+													<input type="text" name="tm3_age" id="tm3_age" class="form-control">
+												</div>
+											</div>
+											<div class="col-9">
+												<div class="form-group radio_input">
+													<label class="container_radio">Male
+														<input type="radio" name="tm3_gender" value="Male"
+															class="required">
+														<span class="checkmark"></span>
+													</label>
+													<label class="container_radio">Female
+														<input type="radio" name="tm3_gender" value="Female"
+															class="required">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="tm3_image">Image</label>
+											<input type="file" name="tm3_image" id="tm3_image"
+												class="form-control required">
+										</div>
+									</div>
+
+
+								</div>
+
+								<!-- /middle-wizard -->
+
+								<div id="bottom-wizard">
+									<button type="button" name="backward" class="backward">Prev</button>
+									<button type="button" name="forward" class="forward">Next</button>
+									<button type="submit" name="process" class="submit">Submit</button>
+								</div>
+								<!-- /bottom-wizard -->
+
+							</form>
+						</div>
+						<!-- /Wizard container -->
+					</div>
+					<!-- /col -->
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container_centering -->
+
+		<!-- /footer -->
+	</div>
+	<!-- /wrapper_centering -->
+
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>,
+						mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus,
+						pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam
+						dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt
+						sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum
+						accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum
+						sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam
+						dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt
+						sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-3.7.0.min.js"></script>
+	<script src="js/common_scripts.min.js"></script>
+	<script src="js/functions.js"></script>
+	<script>
+		var e = document.getElementById("inp");
+		var g = document.getElementById("hideseekbutton");
+		var k = document.getElementById("hideseek");
+		k.style.display = "none";
+		g.addEventListener('click', function () {
+
+			const eval = e.value;
+			if (eval == "Hackathon2023") {
+				k.style.display = 'block';
+				e.style.display = 'none';
+				g.style.display = 'none';
+			} else {
+				k.style.display = 'none';
+			}
+
+		}
+		)
+	</script>
+	<!-- Wizard script -->
+	<script src="js/survey_func.js"></script>
+
+</body>
+
+</html>
